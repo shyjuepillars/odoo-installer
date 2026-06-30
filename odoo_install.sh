@@ -40,7 +40,14 @@ sudo apt update && sudo apt full-upgrade -y
 sudo apt install -y build-essential python3-dev python3-venv python3-pip \
     git curl wget libxslt-dev libzip-dev libldap2-dev libsasl2-dev \
     libjpeg-dev libpq-dev gcc g++ libffi-dev libxml2-dev zlib1g-dev \
-    libssl-dev libjpeg8-dev liblcms2-dev libblas-dev libatlas-base-dev python3-venv
+    libssl-dev libjpeg8-dev liblcms2-dev libblas-dev libatlas-base-dev python3-venv \
+    xfonts-75dpi xfonts-base fontconfig libxrender1 libxext6 libx11-6
+
+
+# Install wkhtmltopdf (for PDF reports)
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+sudo apt --fix-broken install
 
 # Install PostgreSQL
 sudo apt install -y postgresql
@@ -51,9 +58,6 @@ sudo systemctl enable postgresql
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
 sudo npm install -g less less-plugin-clean-css
-
-# Install wkhtmltopdf (for PDF reports)
-sudo apt install -y wkhtmltopdf
 
 # Create Odoo directory and navigate to it
 sudo mkdir -p "$INSTALL_PATH"
