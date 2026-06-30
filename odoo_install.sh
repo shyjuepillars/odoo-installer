@@ -48,7 +48,7 @@ sudo apt install -y build-essential python3-dev python3-venv python3-pip \
 # Install wkhtmltopdf (for PDF reports)
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
-sudo apt --fix-broken install
+sudo apt --fix-broken install -y
 
 # Install PostgreSQL
 sudo apt install -y postgresql
