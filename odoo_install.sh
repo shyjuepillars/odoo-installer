@@ -41,8 +41,9 @@ sudo apt install -y build-essential python3-dev python3-venv python3-pip \
     git curl wget libxslt-dev libzip-dev libldap2-dev libsasl2-dev \
     libjpeg-dev libpq-dev gcc g++ libffi-dev libxml2-dev zlib1g-dev \
     libssl-dev libjpeg8-dev liblcms2-dev libblas-dev libatlas-base-dev python3-venv \
-    xfonts-75dpi xfonts-base fontconfig libxrender1 libxext6 libx11-6
-
+    xfonts-75dpi xfonts-base fontconfig libxrender1 libxext6 libx11-6 \
+    build-essential libopenblas-dev libblas-dev liblapack-dev \
+    libxml2-dev libxslt1-dev zlib1g-dev 
 
 # Install wkhtmltopdf (for PDF reports)
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
