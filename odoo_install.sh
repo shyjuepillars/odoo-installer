@@ -40,7 +40,7 @@ sudo apt update && sudo apt full-upgrade -y
 sudo apt install -y build-essential python3-dev python3-venv python3-pip \
     git curl wget libxslt-dev libzip-dev libldap2-dev libsasl2-dev \
     libjpeg-dev libpq-dev gcc g++ libffi-dev libxml2-dev zlib1g-dev \
-    libssl-dev libjpeg8-dev liblcms2-dev libblas-dev libatlas-base-dev
+    libssl-dev libjpeg8-dev liblcms2-dev libblas-dev libatlas-base-dev python3-venv
 
 # Install PostgreSQL
 sudo apt install -y postgresql
